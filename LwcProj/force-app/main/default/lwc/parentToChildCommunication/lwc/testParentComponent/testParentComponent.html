@@ -1,0 +1,14 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Parent Component" icon-name="standard:account">
+        <lightning-input lwc:ref="userName">
+
+        </lightning-input>
+        
+        <lightning-button 
+          variant="base"
+          label="Button Label" 
+          onclick={populateTheValueMethod} 
+        ></lightning-button>
+        <c-test-child-component full-name={dataToPass}> </c-test-child-component>
+    </lightning-card>
+</template>
